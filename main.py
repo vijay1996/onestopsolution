@@ -1,6 +1,5 @@
 import requests
 from lxml import html
-import MySQLdb
 import random
 import bs4
 from flask import Flask, render_template, request
