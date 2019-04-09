@@ -151,6 +151,7 @@ def search():
 def render_data():
     product = request.args.get("product")
     result = fetch_data(product)
+    result.review[0] = result.review[0].replace('watch?v=','embed/')
     return render_template('render_data.html', results=result)
 
 if __name__ == "__main__":
